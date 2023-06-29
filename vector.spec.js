@@ -25,10 +25,19 @@ describe("Vector.js",function(){
         expect(result.x).toEqual(4);
         expect(result.y).toEqual(1);
         });
-     it('should square root a value', function() {
-          const scalar = 2
-             var result = vector_1.multiply(scalar);
-               expect(result.x).toEqual(2);
-               expect(result.y).toEqual(4);
-          });
+     it('should return the square root', function() {
+        const vector = new Vector(1, 2);
+
+        var result = vector.abs();
+        expect(result.x).toEqual(Math.abs(vector.x));
+        expect(result.y).toEqual(Math.abs(vector.y));
+        });
+     it('should return the square root', function() {
+        const vector = new Vector(1, 2);
+        var result = vector.abs();
+        expect(result.x).toEqual(Math.abs(vector.x));
+        expect(result.y).toEqual(Math.abs(vector.y));
+        });
 })
+
+//Math.sqrt(this.x**2 + this.y**2)

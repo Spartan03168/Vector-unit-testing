@@ -55,4 +55,12 @@ export class Vector{
     }
 }
 
+const vector_1 = new Vector(1, 2)
+const vector_2 = new Vector(2, 0.5)
 
+console.log(vector_1.add(vector_2))
+console.log(vector_1.subtract(vector_2))
+console.log(vector_1.multiply(2))
+console.log(vector_1.abs())
+console.log(vector_1.unit())
+console.log(vector_1.direction())
