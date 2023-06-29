@@ -12,5 +12,23 @@ describe("Vector.js",function(){
         var result = vector_1.subtract(vector_2);
         expect(result.x).toEqual(-1);
         expect(result.y).toEqual(1.5);
+     });
+     it('should multiply vector 1 with a scalar properly', function() {
+     const scalar = 2
+        var result = vector_1.multiply(scalar);
+          expect(result.x).toEqual(2);
+          expect(result.y).toEqual(4);
+     });
+     it('should multiply vector 2 with a scalar properly', function() {
+     const scalar = 2
+        var result = vector_2.multiply(scalar);
+        expect(result.x).toEqual(4);
+        expect(result.y).toEqual(1);
         });
+     it('should square root a value', function() {
+          const scalar = 2
+             var result = vector_1.multiply(scalar);
+               expect(result.x).toEqual(2);
+               expect(result.y).toEqual(4);
+          });
 })
