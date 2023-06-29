@@ -1,0 +1,15 @@
+{
+  "name": "vector_unit_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vector.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^5.0.2"
+  }
+}
